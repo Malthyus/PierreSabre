@@ -3,6 +3,7 @@ import personnages.Humain;
 import personnages.Commercant;
 import personnages.Yakuza;
 import personnages.Ronin;
+import personnages.Samourai;
 public class HistoireTP4 {
 	
 	public static void main(String[] args) {
@@ -22,6 +23,7 @@ public class HistoireTP4 {
 //		yaku.direBonjour();
 //		yaku.extorquer(marco);
 		Ronin roro= new Ronin("Roro","shochu",60);
+		Samourai akimoto= new Samourai("Miyamoto","Akimoto","saké",80);
 //		roro.direBonjour();
 //		roro.donner(marco);
 //		roro.provoquer(yaku);
@@ -32,5 +34,8 @@ public class HistoireTP4 {
 		marco.listerConnaissance();
 		roro.listerConnaissance();
 		yaku.listerConnaissance();
+		akimoto.faireConnaissance(marco);
+		akimoto.listerConnaissance();
+		akimoto.boire("thé");
 	}
 }
