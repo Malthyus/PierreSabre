@@ -47,7 +47,7 @@ public class Humain {
 	}
 	
 	protected void parler(String texte) {
-		System.out.println(texte);
+		System.out.println("("+nom+")-"+texte);
 	}
 	
 	public void faireConnaissance(Humain autreHumain) {

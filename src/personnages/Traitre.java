@@ -30,7 +30,7 @@ public class Traitre extends Samourai {
 		} else {
 			Random random= new Random();
 			int don=nbArgent/20;
-			int val = random.nextInt(nbConnaissance-1);
+			int val = random.nextInt(nbConnaissance);
 			Humain ami=memoire[val];
 			String nomAmi=ami.getNom();
 			parler("Il faut absolument remonter ma cote de confiance. Je vais faire ami ami avec "+nomAmi+".");
